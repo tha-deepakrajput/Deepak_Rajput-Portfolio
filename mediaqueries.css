@@ -1,0 +1,90 @@
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    
+    #hamburger-nav {
+        display: flex;
+    }
+    
+    .profile-container {
+        gap: 2rem;
+    }
+    
+    .profile-image-container {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .name {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-padding {
+        padding: 4rem 1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .profile-content {
+        text-align: center;
+    }
+    
+    .title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .button-group {
+        justify-content: center;
+    }
+    
+    .about-container {
+        flex-direction: column;
+    }
+    
+    .about-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-column {
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .name {
+        font-size: 2.2rem;
+    }
+    
+    .title {
+        font-size: 1.2rem;
+    }
+    
+    .btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .profile-image-container {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak Rajput - Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <header>
+        <nav id="desktop-nav">
+            <div class="logo">Deepak Rajput</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo">Deepak Rajput</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile" class="section-padding">
+            <div class="profile-container">
+                <div class="profile-image-container">
+                    <img src="assets/profile-image.png" alt="Deepak Rajput" class="profile-image">
+                </div>
+                <div class="profile-content">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1 class="name">Deepak <span class="highlight">Rajput</span></h1>
+                    <p class="title">Web Developer</p>
+
+                    <div class="button-group">
+                        <a href="https://drive.google.com/file/d/174hS6HFinJApeDHs2Ya8Ci0wOw2yFZ-S/view?usp=sharing"
+                            class="btn btn-primary" target="_blank">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Contact Me
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/deepak-rajput-b60263300/" target="_blank"
+                            class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/tha-deepakrajput" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <section id="about" class="section-padding">
+            <div class="section-header">
+                <p class="section-subtitle">Get To Know More</p>
+                <h2 class="section-title">About Me</h2>
+            </div>
+
+            <div class="about-container">
+                <div class="about-cards">
+                    <div class="about-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Web Development Course</h3>
+                        <p>Frontend and Backend Developement <br> (July 2024-Present)</p>
+                        <p class="location"><b>HyperVerge Academy </b> <br> <i class="fas fa-map-marker-alt"></i>
+                            <b>Delhi</b>
+                        </p>
+                    </div>
+
+                    <div class="about-card">
+                        <i class="fas fa-university"></i>
+                        <h3>Education</h3>
+                        <p>Bachelors Of Commerce <br> (2021-2024)</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> <b>Delhi</b></p>
+                    </div>
+
+                    <div class="about-card">
+                        <i class="fas fa-star"></i>
+                        <h3>Fresher</h3>
+                        <p>Exploring Full-Stack Development opportunities (Frontend & Backend).</p>
+                    </div>
+                </div>
+
+                <div class="about-text">
+                    <p class="highlight-text">...I'm Here...</p>
+                    <p>
+                        As a <b>Full-Stack Developer</b>, I specialize in <b>backend technologies</b> including
+                        <b>Node.js, Express.js,
+                            MongoDB/Mongoose,</b> and have successfully built scalable web applications with <b>RESTful
+                            APIs,
+                            authentication, authorization, and database management.</b> My experience includes
+                        developing <b>full-stack projects</b>
+                        using <b>JavaScript, EJS, and various npm modules,</b> ensuring robust server-side logic,
+                        security, and
+                        performance optimization. I follow best practices in <b>clean architecture, API design, and
+                            efficient data handling,</b> making me adept at building high-performance backend systems.
+                    </p>
+                    <p>
+                        On the <b>frontend</b>, I am proficient in <b>JavaScript, HTML, CSS, and ReactJS,</b> with
+                        expertise in
+                        crafting responsive and dynamic user interfaces using <b>Bootstrap and Tailwind CSS</b>. I
+                        prioritize
+                        <b>intuitive UX, cross-browser compatibility, and mobile-first design</b> to deliver seamless
+                        web
+                        experiences. My ability to integrate frontend and backend systems allows me to develop
+                        <b>end-to-end web solutions</b> efficiently. I am actively seeking opportunities to contribute
+                        my
+                        <b>full-stack expertise</b> in innovative projects while continuing to grow as a developer.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section-padding">
+            <div class="section-header">
+                <p class="section-subtitle">Explore My</p>
+                <h2 class="section-title">Skills</h2>
+            </div>
+
+            <div class="skills-container">
+                <div class="skills-column">
+                    <h3 class="skills-title"><i class="fas fa-laptop-code"></i> Languages </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>55%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 55%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>C++</span>
+                                <span>40%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 40%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="skills-column">
+                    <h3 class="skills-title"><i class="fas fa-server"></i> Backend Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Node.JS</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 65%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Express.JS</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="skills-column">
+                    <h3 class="skills-title"><i class="fas fa-laptop-code"></i> Frontend Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CSS</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>React.JS</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-column">
+                    <h3 class="skills-title"><i class="fas fa-laptop-code"></i> Developer Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>VS Code</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>git</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Github</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="skills-column">
+                    <h3 class="skills-title"><i class="fas fa-laptop-code"></i> DataBases</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MongoDB</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projects" class="section-padding">
+            <div class="section-header">
+                <p class="section-subtitle">Browse My Recent</p>
+                <h2 class="section-title">Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/Project-1.png" alt="User Admin Authentication System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/tha-deepakrajput/User-Admin-Authentication-MH-3.1.git"
+                                    target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="https://user-admin-authentication-mh-3-1.onrender.com/" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Authentication System</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>User Admin Authentication</h3>
+                        <p>A secure role-based access control system with user and admin privileges</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/Project-2.png" alt="Trivia Quiz Game">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/tha-deepakrajput/Trivia-Quiz-Game-1.git" target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="https://trivia-quiz-game-1.vercel.app" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Interactive Game</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Trivia Quiz Game</h3>
+                        <p>An engaging quiz application with multiple categories and score tracking</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">API Integration</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/Project-3.png" alt="Weather Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/tha-deepakrajput/Weather-Dashboard.git" target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="https://weather-dashboard-ten-omega.vercel.app" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Weather App</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather Dashboard</h3>
+                        <p>Real-time weather information with forecast data and location search</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Weather API</span>
+                            <span class="tech-tag">Geolocation</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/Project-4.png" alt="Task Management App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/tha-deepakrajput/Task-Management-App.git" target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="https://task-management-app-psi-six.vercel.app" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">To-Do App</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>A streamlined application to organize, prioritize, and track tasks efficiently with user-friendly controls.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Local Storage</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding">
+            <div class="section-header">
+                <p class="section-subtitle">Get In Touch</p>
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:deepak.rajputt.77@gmail.com">deepak.rajputt.77@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/deepak-rajput-b60263300/" target="_blank">Deepak
+                                Rajput</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#experience">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/deepak-rajput-b60263300/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/tha-deepakrajput" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="copyright">Copyright &copy; <span id="year"></span> Deepak Rajput. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Update copyright year automatically
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
