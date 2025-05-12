@@ -41,7 +41,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         if (targetElement) {
             window.scrollTo({
                 top: targetElement.offsetTop - 80,
-                behavior: 'smooth'
+                behavior: 'smooth' 
             });
             
             // Close mobile menu if open
@@ -60,24 +60,26 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
     e.preventDefault();
     
     const formData = new FormData(e.target);
-    const data = Object.fromEntries(formData);
+    const formAction = 'https://formsubmit.co/ajax/deepak.rajputt.77@gmail.com';
     
     try {
-        const response = await fetch('https://your-portfolio-website.com/send', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data)
-        });
-        
-        if (response.ok) {
-            alert('Message sent successfully!');
-            e.target.reset();
-        } else {
-            throw new Error('Failed to send message');
-        }
+      const response = await fetch(formAction, {
+        method: 'POST',
+        body: formData,
+      });
+      
+      const result = await response.json();
+      
+      if (response.ok) {
+        alert('Message sent successfully!');
+        // Either:
+        // window.location.href = '#contact'; // Scroll back to contact section
+        // OR
+        e.target.reset(); // Just clear the form
+      } else {
+        throw new Error(result.message || 'Failed to send message');
+      }
     } catch (error) {
-        alert('Error sending message: ' + error.message);
+      alert('Error: ' + error.message);
     }
-});
+  });
